@@ -1,0 +1,4 @@
+#Search:
+  Whenever a node is to be searched in a binary search tree, the searching starts from the root node. 
+  If the value is lesser than the root, then the left sub-tree is searched, else the node is searched in the right sub-tree. 
+  This process is continued until the particular node has been found or no nodes are left in the tree.
