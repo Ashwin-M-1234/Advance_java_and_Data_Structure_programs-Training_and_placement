@@ -1,0 +1,3 @@
+#insertion...
+If the new node is lesser than or equal to the current node then the new node is inserted into the current node’s left sub-tree.
+
