@@ -1,30 +1,33 @@
+#Tree operations in python language :
+#creating class node....
 class Node:
 	def __init__(self,value):
-		self.left=None
-		self.right=None
-		self.data=value
+		self.left=None		#initializing left is empty
+		self.right=None		#initializing right is empty
+		self.data=value		#initializing data is anything of like value
 
 
-def preorder(temp):
+def preorder(temp):					# preorder traversing 
 	#Function to print in preorder
 	if temp:
 		print(temp.data,",",end="")
 		preorder(temp.left)
 		preorder(temp.right)
 
-definorder(temp):
+definorder(temp):					# inorder traversing
 	#Function to print in inorder
 	if temp:
 		inorder(temp.left)
 		print(temp.data,",",end="")
 		inorder(temp.right)
-defpostorder(temp):
+defpostorder(temp):					# postorder traversing
 	#Function to print in postorder
 	if temp:
 		postorder(temp.left)
 		postorder(temp.right)
 		print(temp.data,",",end="")
-def insert(temp,value):
+def insert(temp,value):					# inserting the values in the tree node 
+	
 	#Function to insert a Node in the Binary Search Tree
 	if temp==None:
 		newNode=Node(value)
@@ -37,7 +40,7 @@ def insert(temp,value):
 		else:
 			temp.right=insert(temp.right,value)
 		return temp
-def create():
+def create():						# create the node for the tree 
 	#Function to print in create the Binary Tree
 	root=None
 	n=int(input("Enter the number of elements you want to enter \t"))
@@ -47,7 +50,8 @@ def create():
 		value=int(input())
 		root=insert(root,value)
 	return root
-def search(root,value):
+def search(root,value):					# searching an element in the node 
+	
 	#Function to search a node in a binary search tree.
 	temp=root
 	while(temp):
@@ -63,7 +67,7 @@ def search(root,value):
 			temp=temp.right
 	print("The value ",value," does not exits in the binary tree.")
 
-def inorderSuccessor(temp):
+def inorderSuccessor(temp):				# searching in the leaft node 
 
 	t=temp
 	#Loop down to find the leftmost leaf node.
@@ -71,7 +75,7 @@ def inorderSuccessor(temp):
 		t=t.left
 	return t
 
-defdeleteNode(temp,value):
+defdeleteNode(temp,value):				# delete a node from the tree 
 	#Function to delete a node from binary search tree.
 	if(temp==None):
 		print("The value ",value," does not exits in the binary tree.")
@@ -100,19 +104,26 @@ defdeleteNode(temp,value):
 
 print("Binary Search Tree")
 root=create()
+
 print("\nThe preorder traversal of tree is: ")
 preorder(root)
+
 print("\nTheinorder traversal of tree is: ")
 inorder(root)
+
 print("\nThepostorder traversal of tree is: ")
 postorder(root)
+
 value=int(input("\nEnter the element you want to search\t"))
 search(root,value)
 value=int(input("Enter the element you want to delete\t"))
 root=deleteNode(root,value)
+
 print("\nThe preorder traversal of tree -after deletion- is: \n")
 preorder(root)
+
 print("\nTheinorder traversal of -tree after deletion- is: \n")
 inorder(root)
+
 print("\nThepostorder traversal of -tree after deletion- is: \n")
 postorder(root)
