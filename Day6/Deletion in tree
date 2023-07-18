@@ -1,0 +1,10 @@
+#Deletion....
+  Whenever a node is to be deleted from a binary search tree, one of the three possibilities may arise
+    (a) The node to be deleted is a leaf node(i.e. it has no child nodes)
+    (b)The node to be deleted has only one child node
+       Copy the child node’s data into the node and then delete the child node from the binary search tree.
+    (c)The node to be deleted has two children nodes
+       Find the in-order successor of the node, copy the content’s of the in-order successor into the node and then remove the in-order successor from the binary search tree.
+
+
+
