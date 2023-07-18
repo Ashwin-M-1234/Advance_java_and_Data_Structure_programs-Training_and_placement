@@ -1,4 +1,4 @@
 #Insertion...
-1.If the new node is lesser than or equal to the current node then the new node is inserted into the current node’s left sub-tree.
-2.If the new node is greater than the current node then the new node is inserted into the current node’s right sub-tree.
+    1. If the new node is less than or equal to the current node, then the new node is inserted into the current node’s left sub-tree.
+    2. If the new node is greater than the current node, then the new node is inserted into the current node’s right sub-tree.
 
