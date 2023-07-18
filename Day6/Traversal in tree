@@ -1,0 +1,9 @@
+#Traversal:
+Binary search tree traversal is the process to visit every node of a binary search tree and display their values. There are three ways to traverse a binary search tree
+●      In in-ordertraversal, the left sub-tree is visited first, then the root node followed by the right sub-tree. Every sub-tree is again considered to be a binary search tree.
+
+●      In pre-ordertraversal, the root node is visited first, then the left sub-tree followed by the right sub-tree. Every sub-tree is again considered to be a binary search tree.
+
+●      In post-ordertraversal, the left sub-tree is visited first, then the right sub-tree followed by the root node. Every sub-tree is again considered to be a binary search tree.
+
+ 
