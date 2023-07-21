@@ -1,4 +1,5 @@
- 
+// compound intrest = A - p
+// A = (p*(1+(r/n))^(t*n))
 // to calculate the compound interest
 import java.util.Scanner;
 public class CompoundIntrest {
