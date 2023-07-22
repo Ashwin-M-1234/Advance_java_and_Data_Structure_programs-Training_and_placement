@@ -1,36 +1,36 @@
-import java.util.Arrays;
+
 import java.util.Scanner;
-public class Frequency {
-	public static void main(String[] args) {
-		int n, i, j, count;
-		Scanner sc = new Scanner(System.in);
-		System.out.print("Enter Array size : ");      // entering the size of array 
-		n = sc.nextInt();
-		int[] arr = new int[n];
-		int[] freq = new int[n];
-		Arrays.fill(freq, -1);
-		System.out.format("Enter Frequency Array %d elements : ", n );   // entering the elements of array 
-		for(i = 0; i < n; i++) {
-			arr[i] = sc.nextInt();
-		}
-		for(i = 0; i < arr.length; i++){
-			count = 1;
-			for(j = i + 1; j < arr.length; j++){
-				if(arr[i] == arr[j]){
-					count++;
-					freq[j] = 0;
-				}
-			}
-			if(freq[i] != 0){
-				freq[i] = count;
-			}
-		}
-		System.out.println("The Frequency of All the Elements in this Array ");
-		
-		for(i = 0; i < arr.length; i++) {
-			if(freq[i] != 0){
-				System.out.println(arr[i] + " Occurs " + freq[i] + " Times.");
-			}
-		}
+	public class Frequencycheck {
+	    public static void main(String[] args) {
+	        Scanner sc = new Scanner(System.in);
+
+	        // Step 1: Prompt user to enter the size of the array
+	        System.out.print("Enter the size of the array: ");
+	        int size = sc.nextInt();
+
+	        // Step 3: Create the array
+	        int[] array = new int[size];
+
+	        // Step 4: Prompt user to enter the elements of the array
+	        System.out.println("Enter the elements of the array:");
+	        for (int i = 0; i < size; i++) {
+	            array[i] = sc.nextInt();
+	        }
+
+	        // Step 6: Check frequency of each element
+	        System.out.println("Element Frequency:");
+	        for (int i = 0; i < size; i++) {
+	            int count = 1;
+	            // Check frequency of array[i]
+	            for (int j = i + 1; j < size; j++) {
+	                if (array[i] == array[j]) {
+	                    count++;
+	                }
+	            }
+	            // Avoid counting the same element again
+	            if (count > 0) {
+	                System.out.println(array[i] + " occurs " + count + " time(s).");
+	            }
+	        }
+	    }
 	}
-}
