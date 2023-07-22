@@ -1,3 +1,4 @@
+// printing Square pattern........
 public class SquarePattern {
     public static void main(String[] args) {
         int rows = 4;
@@ -12,7 +13,7 @@ public class SquarePattern {
     }
 }
 
-
+// printing right triangle pattern.......
 public class RightTrianglePattern {
     public static void main(String[] args) {
         int rows = 4;
@@ -26,7 +27,7 @@ public class RightTrianglePattern {
     }
 }
 
-
+// printing an inverted triangle pattern........
 public class InvertedRightTrianglePattern {
     public static void main(String[] args) {
         int rows = 4;
@@ -40,7 +41,7 @@ public class InvertedRightTrianglePattern {
     }
 }
 
-
+// printing pyramidal pattern........
 public class PyramidPattern {
     public static void main(String[] args) {
         int rows = 4;
