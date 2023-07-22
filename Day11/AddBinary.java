@@ -46,3 +46,4 @@ This program handles binary numbers of varying lengths and correctly adds them t
 Additionally, it includes input validation for binary numbers and assumes that the user will enter valid binary strings (i.e., sequences of 0s and 1s). 
 If the user enters non-binary values, the program may throw a NumberFormatException when parsing the binary strings into integers. 
 To make the program more robust, additional input validation can be added to ensure the input is valid in binary format.
+*/
