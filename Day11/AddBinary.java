@@ -1,3 +1,11 @@
+/*
+1 + 0 = 1
+0 + 1 = 1
+0 + 0 = 0
+1 + 1 = 10 (0 and carry 1)
+1 + 1 + 1 = 10 + 1 = 11 (1 and carry 1)
+
+*/
 import java.util.Scanner;
 
 public class BinaryAdd
